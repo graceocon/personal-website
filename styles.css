@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9reG13cWU3bG5wN2I0Y3ZjbTVnMnl5MTlwbzc4aWtqMDdyYjZ3NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8w61HSu6xQjoa2NzKN/giphy.gif");
+    /* background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9reG13cWU3bG5wN2I0Y3ZjbTVnMnl5MTlwbzc4aWtqMDdyYjZ3NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dAWZiSMbMvObDWP3aA/giphy.gif"); */
+    /* background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9reG13cWU3bG5wN2I0Y3ZjbTVnMnl5MTlwbzc4aWtqMDdyYjZ3NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5vidmSHUsyoybSYNN0/giphy.gif"); */
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.a-tags {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    column-gap: 20px;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    color: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
