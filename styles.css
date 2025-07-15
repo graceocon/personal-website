@@ -1,32 +1,47 @@
-body {
-    margin: 0;
-    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9reG13cWU3bG5wN2I0Y3ZjbTVnMnl5MTlwbzc4aWtqMDdyYjZ3NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8w61HSu6xQjoa2NzKN/giphy.gif");
-    /* background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9reG13cWU3bG5wN2I0Y3ZjbTVnMnl5MTlwbzc4aWtqMDdyYjZ3NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dAWZiSMbMvObDWP3aA/giphy.gif"); */
-    /* background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcm9reG13cWU3bG5wN2I0Y3ZjbTVnMnl5MTlwbzc4aWtqMDdyYjZ3NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5vidmSHUsyoybSYNN0/giphy.gif"); */
-    background-size: cover;
-    font-family: "Raleway", sans-serif;
-    font-size: 1rem;
-    color: whitesmoke;
-    text-align: center;
+*, *::before, *::after {
+    box-sizing: border-box;  
 }
 
-.a-tags {
+body {
+    margin: 0;
+    background: #fde4e7 url("/images/background.png");
+    background-size: cover;
+    font-family: Raleway, serif;
+    font-size: 1rem;
+    color: #575555;
+}
+
+.contents {
     display: flex;
-    width: max-content;
-    margin: 0 auto;
-    column-gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+    min-height: 100vh;
+}
+
+/* .spacing {
+    min-height: 200px;
+} */
+
+.a-tags {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* TYPOGRAPHY */
 
 h1 {
+    margin: 0;
     font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 1.5px;
 }
 
 a {
     color: inherit;
     font-size: 1.5rem;
     text-decoration: none;
+    letter-spacing: 1px;
     cursor: pointer;
 }
-
