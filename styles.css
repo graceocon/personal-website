@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    height: 100vh;
     background: #fde4e7 url("/images/background.png");
     background-size: cover;
     font-family: Raleway, serif;
