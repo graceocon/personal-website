@@ -1,0 +1,47 @@
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+
+body {
+    margin: 0;
+    background: #fde4e7 url("/images/background.png");
+    background-size: cover;
+    font-family: Raleway, serif;
+    font-size: 1rem;
+    color: #575555;
+}
+
+.contents {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+/* .spacing {
+    min-height: 200px;
+} */
+
+.a-tags {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+
+a {
+    color: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
