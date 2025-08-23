@@ -19,14 +19,34 @@
     <body>
         <header class="flex">
             <div class="flex logo">
-                <img src="./images/avatar.jpg" alt="Avatar of Grace O'Connell" />
+                <i class="fa-solid fa-face-grin-beam"></i>
+                <!-- <img src="./images/avatar.jpg" alt="Avatar of Grace O'Connell." /> -->
                 <h1>Grace O'Connell</h1>
             </div>
             <nav>
-                <ul>
+                <img class="nav-img" src="./images/nav.svg" alt="Navigation button."/>
+                <img class="close-img" src="./images/close.svg" alt="Close button."/>
+                
+                <div class="header__sm-menu">
+                    <div class="header__sm-menu-content">
+                    <ul class="header__sm-menu-links">
+                        <li class="header__sm-menu-link">
+                            <a href="./index.html"> Home </a>
+                        </li>
+                        <li class="header__sm-menu-link">
+                            <a href="./index.html#project-section"> Projects </a>
+                        </li>
+                        <li class="header__sm-menu-link">
+                            <a href="./index.html#about-section"> About </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+
+                <ul class="nav-list">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#project-section">Projects</a></li>
-                    <li><a href="#about-section">About</a></li>
+                    <li><a href="./index.html#project-section">Projects</a></li>
+                    <li><a href="./index.html#about-section">About</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,12 +69,36 @@
                     </a>
                     <p>Or click on my project highlights below...</p>
                     <div class="grid">
-                        <img src="./images/mindcompass.png" target="_blank" alt="Interface of my MindCompass project which test geographical knowledge" />
-                        <img src="./images/password-generator.jpg" alt="Interface of my Password Generator project" />
-                        <img src="./images/tenzies.jpg" alt="Interface of my Tenzies project" />
-                        <img src="./images/meme-generator.jpg" alt="Interface of my Meme Generator project" />
-                        <img src="./images/oldagram.png" alt="Interface of my Oldagram project" />
-                        <img src="./images/experiences.png" alt="Interface of my AirBnb project" />
+                        <a href="https://github.com/graceocon/mind-compass"
+                            target="_blank">
+                                <img src="./images/mindcompass.png" 
+                                    alt="Interface of my MindCompass project which test geographical knowledge." />
+                        </a>
+                        <a href="https://github.com/graceocon/color-scheme-generator"
+                            target="_blank">
+                                <img src="./images/color-scheme-generator.png"
+                                    alt="Interface of my Color Scheme Generator project." />
+                        </a>
+                        <a href="https://github.com/graceocon/game-of-war"
+                            target="_blank">
+                                <img src="./images/game-of-war.png"
+                                    alt="Interface of my Game of War project." />
+                        </a>
+                        <a href="https://github.com/graceocon/meme-generator"
+                            target="_blank">
+                                <img src="./images/meme-generator.jpg"
+                                    alt="Interface of my Meme Generator project." />
+                        </a>
+                        <a href="https://github.com/graceocon/tenzies"
+                            target="_blank">
+                                <img src="./images/tenzies.jpg"
+                                    alt="Interface of my Tenzies project." />
+                        </a>
+                        <a href="https://github.com/graceocon/assembly-endgame"
+                            target="_blank">
+                                <img src="./images/assembly-endgame.png"
+                                    alt="Interface of my Assembly Endgame project." />
+                        </a>
                     </div>
                 </div>
             </section>
@@ -91,7 +135,7 @@
                 <a
                     href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
                     target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <div class="flex">
                     <p>grace.p.oconnell@gmail.com</p>
