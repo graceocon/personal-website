@@ -5,13 +5,13 @@
 
 body {
     margin: 0;
-    font-family: "Arimo", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #2e2e2e;
     text-align: center;
 }
 
 
-/* COMMON FEATURES */
+/* SHARED AND TYPOGRAPHY */
 
 .flex {
     display: flex;
@@ -20,6 +20,11 @@ body {
 .container {
     margin: 0 auto;
     max-width: 75%;
+}
+
+#project .container,
+#about .container {
+    padding: 4.25rem 0 3.5rem;
 }
 
 ul {
@@ -36,7 +41,50 @@ a {
 
 nav ul,
 p {
+    margin: 0;
     letter-spacing: 0.1em;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+h6 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: 100;
+}
+
+h2,
+h3 {
+    font-size: 3.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.6em;
+    border-bottom: 2px solid #fb81c3;
+}
+
+h2 {
+    padding-bottom: 1em;
+}
+
+h3 {
+    padding-bottom: 0.75em;
+}
+
+h4 {
+    padding: 1.5em 0 0.5em;
+    font-size: 2.25rem;
 }
 
 
@@ -46,7 +94,7 @@ header {
     position: fixed;
     z-index: 1;
     width: 100%;
-    padding: 0.75em 1.25em;
+    padding: 1em 1.25em;
     justify-content: space-between;
     align-items: center;
     background-color: #2e2e2e;
@@ -61,16 +109,6 @@ header {
 
 .fa-face-grin-beam {
     font-size: 1.5rem;
-}
-
-/* header img {
-    width: 3rem;
-    border-radius: 100%;
-    box-shadow: 0 0 10px #fb81c3;
-} */
-
-h1 {
-    font-size: 0.75rem;
 }
 
 /* TO BE DONE VIA JS */
@@ -91,6 +129,7 @@ h1 {
 
 nav ul {
     display: none;
+    gap: 2em;
 }
 
 /* --- */
@@ -104,61 +143,43 @@ li a:hover {
 
 /* MAIN */
 
-/* SECTION 1 HOME */
+/* HOME */
 
-#home-section {
+#home {
     background: #fb81c3 url("/images/bg-gradients/bg-img-1.png");
     background-size: cover;
 }
 
-#home-section .container {
+#home .container {
     margin: 0 auto;
     padding: 7.5rem 0 3.5rem;
 }
 
-h2 {
-    margin: 0;
-    font-size: 2rem;
-}
 
-.h2-new-line {
-    display: block;
-    padding-bottom: 1em;
-    border-bottom: 2px solid #fb81c3;
-}
+/* PROJECTS */
 
-#home-section p {
-    margin: 3em 0 0;
-}
-
-
-/* SECTION 2 PROJECTS */
-
-#project-section {
+#project {
     background-color: #b2a8a6;
     color: #2e2e2e;
-}
-
-#project-section .container {
-    padding: 5rem 0 3.5rem;
 }
 
 .a-btn {
     padding: 0.75rem 1.5em;
     background-color: #ededef;
     border-radius: 10px;
-    box-shadow: 0 0 5px #b2a8a6;
+    box-shadow: 0 0 5px #2e2e2e;
+    font-size: 1.5rem;
     color: #2e2e2e;
 }
 
 .a-btn:hover {
     background-color: #fb81c3;
     color: #ededef;
-    /* box-shadow: 1px 1px 10px #ededef; */
+    box-shadow: 0 0 5px #ededef;
 }
 
-#project-section p {
-    padding: 2.5em 0 1em;
+#project p {
+    padding: 1.5em 0 1em;
     width: 60%;
     margin: 0 auto;
 }
@@ -179,38 +200,25 @@ h2 {
 }
 
 .grid img:hover {
-    /* z-index: -1; */
     z-index: -1;
-    box-shadow: 2px 2px 10px #fb81c3;
+    box-shadow: 0 0 20px #fb81c3;
     filter: brightness(70%) hue-rotate(300deg);
 }
 
 
-/* SECTION 3 ABOUT */
+/* ABOUT */
 
-#about-section {
+#about {
     background-color: #f5dcd8;
     color: #2e2e2e;
 }
 
-#about-section .container {
-    padding: 4.25rem 0 3.5rem;
-}
-
-h3 {
-    margin: 0;
-    padding-bottom: 0.5em;
-    font-size: 2rem;
+.about .about-p {
+    font-size: 1rem;
 }
 
 .skills-section {
     justify-content: center;
-}
-
-h4 {
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    font-size: 1.5rem;
 }
 
 h4,
@@ -263,104 +271,83 @@ footer {
     margin: 0;
 }
 
+
 /* MEDIA QUERIES */
 
 @media (min-width: 620px) {
     nav ul {
         display: flex;
-        font-size: 0.75rem;
-        gap: 2em;
-    }
-    #home-section .container {
-        padding: 8rem 0 3.5rem;
-    }
-    #project-section .container {
-        padding: 5.5rem 0 3.5rem;
-    }
-    #about-section .container {
-        padding: 4.75rem 0 3.5rem;
     }
 }
 
-@media (min-width: 770px) {
-    h2,
-    h3 {
-        font-size: 2.75rem;
-    }
-    p,
-    .a-btn {
-        font-size: 1.25rem;
-    }
-    .a-btn {
-        padding: 1rem 1.5em;
-    }
-    h4 {
-        font-size: 2rem;
-    }
-    .contact a {
-        font-size: 3rem;
+@media (min-width: 970px) {
+    #project .container {
+        width: 715px;
     }
 }
 
 @media (min-width: 1024px) {
+    header {
+        padding: 1.25em 1.5em;
+    }
+    #home .container {
+        padding: 10.25rem 0 5.5rem;
+    }
+    #project .container,
+    #about .container {
+        padding: 7.5rem 0 5.5rem;
+    }
+    #about .container {
+        max-width: 90%;
+    }
     .fa-face-grin-beam {
         font-size: 2.25rem;
     }
-    h1 {
+    h6,
+    nav ul {
         font-size: 1.25rem;
     }
-    nav ul {
-        font-size: 1.5rem;
-    }
-    #home-section .container {
-        padding: 11rem 0 5.5rem;
-    }
-    #project-section .container {
-        padding: 8.5rem 0 5.5rem;
-    }
-    #about-section .container {
-        padding: 7.75rem 0 5.5rem;
+    h1 {
+        font-size: 7rem;
     }
     h2,
     h3 {
-        font-size: 3.5rem;
-    }
-    #home-section p,
-    .a-btn,
-    #project-section p,
-    .contact p {
-        font-size: 2rem;
-    }
-    .a-btn {
-        padding: 1.5rem 1.5em;
+        font-size: 5rem;
     }
     h4 {
-        font-size: 2.5rem;
+        padding: 0.5em 0 0.5em;
+        font-size: 3.5rem;
+    }
+    #home p,
+    #project p,
+    #contact p {
+        font-size: 1.75rem;
+    }
+    .a-btn {
+        padding: 1rem 1.5em;
+        font-size: 2rem;
     }
     .about-main {
         display: flex;
-        justify-content: space-between;
+        gap: 5rem;
         align-items: start;
     }
-    #about-section p {
+    #about p {
      width: 55%;
     }
     .skills li {
         font-size: 1.2rem;
     }
     .contact a {
-        font-size: 4.25rem;
+        font-size: 3.5rem;
     }
 }
+
 @media (min-width: 1300px) {
     .about-main {
         justify-content: space-around;
     }
     h4 {
-        padding-top: 0.5em;
+        padding-top: 0;
     }
 }
-
-/* @media (min-width: 1280px) {} */
-/* @media (min-width: 410px) {} */
-/* @media (min-width: 1370px) {} */
