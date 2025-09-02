@@ -44,6 +44,7 @@ p {
 
 header {
     position: fixed;
+    z-index: 1;
     width: 100%;
     padding: 0.75em 1.25em;
     justify-content: space-between;
@@ -179,6 +180,7 @@ h2 {
 
 .grid img:hover {
     /* z-index: -1; */
+    z-index: -1;
     box-shadow: 2px 2px 10px #fb81c3;
     filter: brightness(70%) hue-rotate(300deg);
 }
