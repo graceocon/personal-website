@@ -35,7 +35,7 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: inherit;
-    font-weight: 700;
+    /* font-weight: 700; */
     text-transform: uppercase;
 }
 
@@ -146,7 +146,7 @@ li a:hover {
 /* HOME */
 
 #home {
-    background: #fb81c3 url("/images/bg-gradients/bg-img-1.png");
+    background: #fb81c3 url("/images/bg-gradients/bg-img-3.png");
     background-size: cover;
 }
 
@@ -159,7 +159,8 @@ li a:hover {
 /* PROJECTS */
 
 #project {
-    background-color: #b2a8a6;
+    /* background-color: #f4cbd4; */
+    background-color: #f6a6cb;
     color: #2e2e2e;
 }
 
@@ -209,7 +210,8 @@ li a:hover {
 /* ABOUT */
 
 #about {
-    background-color: #f5dcd8;
+    /* background-color: #f6a6cb; */
+    background-color: #f4cbd4;
     color: #2e2e2e;
 }
 
